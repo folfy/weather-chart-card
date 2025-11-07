@@ -151,6 +151,8 @@ set hass(hass) {
     : null;
 
   if (this.weather) {
+    const visibility_entity = this.config.visibility_entity ? this.config.visibility_entity : this.config.visibility;
+
     this.temperature = this.config.temp ? hass.states[this.config.temp].state : this.weather.attributes.temperature;
     this.humidity = this.config.humid ? hass.states[this.config.humid].state : this.weather.attributes.humidity;
     this.pressure = this.config.press ? hass.states[this.config.press].state : this.weather.attributes.pressure;
@@ -158,7 +160,7 @@ set hass(hass) {
     this.windSpeed = this.config.windspeed ? hass.states[this.config.windspeed].state : this.weather.attributes.wind_speed;
     this.dew_point = this.config.dew_point ? hass.states[this.config.dew_point].state : this.weather.attributes.dew_point;
     this.wind_gust_speed = this.config.wind_gust_speed ? hass.states[this.config.wind_gust_speed].state : this.weather.attributes.wind_gust_speed;
-    this.visibility = this.config.visibility ? hass.states[this.config.visibility].state : this.weather.attributes.visibility;
+    this.visibility = (visibility_entity && hass.states[visibility_entity]) ? hass.states[visibility_entity].state : this.weather.attributes.visibility;
 
     if (this.config.winddir && hass.states[this.config.winddir] && hass.states[this.config.winddir].state !== undefined) {
       this.windDirection = parseFloat(hass.states[this.config.winddir].state);

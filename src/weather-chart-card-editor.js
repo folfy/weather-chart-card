@@ -11,7 +11,7 @@ const ALT_SCHEMA = [
   { name: "windspeed", title: "Alternative wind speed sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "dew_point", title: "Alternative dew pointsensor", selector: { entity: { domain: 'sensor' } } },
   { name: "wind_gust_speed", title: "Alternative wind gust speed sensor", selector: { entity: { domain: 'sensor' } } },
-  { name: "visibility", title: "Alternative visibility sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "visibility_entity", title: "Alternative visibility sensor", selector: { entity: { domain: 'sensor' } } },
 ];
 
 class WeatherChartCardEditor extends LitElement {
@@ -62,7 +62,11 @@ class WeatherChartCardEditor extends LitElement {
       this.hass.states[config.entity] &&
       this.hass.states[config.entity].attributes &&
       this.hass.states[config.entity].attributes.visibility !== undefined
-    ) || config.visibility !== undefined;
+    ) || config.visibility_entity !== undefined || (
+      (config.visibility !== undefined) &&
+      this.hass &&
+      this.hass.states[config.visibility]
+    );
     this.hasDescription = (
       this.hass &&
       this.hass.states[config.entity] &&
