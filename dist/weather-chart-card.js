@@ -14,6 +14,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -48,6 +49,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -82,6 +84,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -116,6 +119,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -150,6 +154,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -184,6 +189,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -218,6 +224,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -252,6 +259,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -286,6 +294,7 @@ const locale = {
       'hPa': 'гПа',
       'mmHg': 'мм рт.ст.',
       'mm': 'мм',
+      'cm': 'см',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -320,6 +329,7 @@ const locale = {
         'hPa': 'hPa',
         'mmHg': 'mm Hg',
         'mm': 'mm',
+        'cm': 'cm',
         'in': 'in'
     },
     'cardinalDirections': [
@@ -354,6 +364,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'po'
     },
     'cardinalDirections': [
@@ -388,6 +399,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -422,6 +434,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -456,6 +469,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -490,6 +504,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -524,6 +539,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -558,6 +574,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'χιλ. υδράργυρου',
       'mm': 'χιλ.',
+      'cm': 'εκ.',
       'in': 'ίντσες'
     },
     'cardinalDirections': [
@@ -592,6 +609,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mmHg',
       'mm': 'мм',
+      'cm': 'см',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -626,6 +644,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -660,6 +679,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -694,6 +714,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -728,6 +749,7 @@ const locale = {
       'hPa': 'гПа',
       'mmHg': 'мм рт. ст.',
       'mm': 'мм',
+      'cm': 'см',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -762,6 +784,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -867,16 +890,23 @@ var t;const i=window,s$1=i.trustedTypes,e=s$1?s$1.createPolicy("lit-html",{creat
 
 const ALT_SCHEMA = [
   { name: "temp", title: "Alternative temperature sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "temp_unit", title: "Temperature sensor unit", selector: { select: { options: [ '', '°C', '°F' ], mode: 'dropdown' } } },
   { name: "feels_like", title: "Alternative feels like temperature sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "feels_like_unit", title: "Feels like sensor unit", selector: { select: { options: [ '', '°C', '°F' ], mode: 'dropdown' } } },
   { name: "description", title: "Alternative weather description sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "press", title: "Alternative pressure sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "press_unit", title: "Pressure sensor unit", selector: { select: { options: [ '', 'hPa', 'kPa', 'mbar', 'bar', 'mmHg', 'inHg' ], mode: 'dropdown' } } },
   { name: "humid", title: "Alternative humidity sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "uv", title: "Alternative UV index sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "winddir", title: "Alternative wind bearing sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "windspeed", title: "Alternative wind speed sensor", selector: { entity: { domain: 'sensor' } } },
-  { name: "dew_point", title: "Alternative dew pointsensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "windspeed_unit", title: "Wind speed sensor unit", selector: { select: { options: [ '', 'm/s', 'km/h', 'ft/s', 'mph', 'kn' ], mode: 'dropdown' } } },
+  { name: "dew_point", title: "Alternative dew point sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "dew_point_unit", title: "Dew point sensor unit", selector: { select: { options: [ '', '°C', '°F' ], mode: 'dropdown' } } },
   { name: "wind_gust_speed", title: "Alternative wind gust speed sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "wind_gust_speed_unit", title: "Wind gust speed sensor unit", selector: { select: { options: [ '', 'm/s', 'km/h', 'ft/s', 'mph', 'kn' ], mode: 'dropdown' } } },
   { name: "visibility_entity", title: "Alternative visibility sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "visibility_unit", title: "Visibility sensor unit", selector: { select: { options: [ '', 'm', 'km', 'mi' ], mode: 'dropdown' } } },
 ];
 
 class WeatherChartCardEditor extends s {
@@ -938,7 +968,7 @@ class WeatherChartCardEditor extends s {
       this.hass.states[config.entity].attributes &&
       this.hass.states[config.entity].attributes.description !== undefined
     ) || config.description !== undefined;
-    this.fetchEntities();
+    this.fetchEntities();	  
     this.requestUpdate();
   }
 
@@ -1144,17 +1174,17 @@ class WeatherChartCardEditor extends s {
       </style>
       <div>
       <div class="textfield-container">
-      <ha-select
-        naturalMenuWidth
-        fixedMenuPosition
-        label="Entity"
-        .configValue=${'entity'}
-        .value=${this._entity}
-        @change=${(e) => this._EntityChanged(e, 'entity')}
-        @closed=${(ev) => ev.stopPropagation()}
-      >
-        ${this.entities.map((entity) => x`<ha-list-item .value=${entity}>${entity}</ha-list-item>`)}
-      </ha-select>
+<ha-select
+  naturalMenuWidth
+  fixedMenuPosition
+  label="Entity"
+  .configValue=${'entity'}
+  .value=${this._entity}
+  @change=${(e) => this._EntityChanged(e, 'entity')}
+  @closed=${(ev) => ev.stopPropagation()}
+>
+  ${this.entities.map((entity) => x`<ha-list-item .value=${entity}>${entity}</ha-list-item>`)}
+</ha-select>
       <ha-textfield
         label="Title"
         .value="${this._config.title || ''}"
@@ -17855,7 +17885,7 @@ static getStubConfig(hass, unusedEntities, allEntities) {
       humidity: {type: Object},
       pressure: {type: Object},
       uv_index: {type: Object},
-      windSpeed: {type: Object},
+      windspeed: {type: Object},
       dew_point: {type: Object},
       wind_gust_speed: {type: Object},
       visibility: {type: Object},
@@ -17930,22 +17960,73 @@ set hass(hass) {
   this.sun = 'sun.sun' in hass.states ? hass.states['sun.sun'] : null;
   this.unitSpeed = this.config.units.speed ? this.config.units.speed : this.weather && this.weather.attributes.wind_speed_unit;
   this.unitPressure = this.config.units.pressure ? this.config.units.pressure : this.weather && this.weather.attributes.pressure_unit;
-  this.unitVisibility = this.config.units.visibility ? this.config.units.visibility : this.weather && this.weather.attributes.visibility_unit;
+  // this.unitVisibility = this.config.units.visibility ? this.config.units.visibility : this.weather && this.weather.attributes.visibility_unit; // (unused)
   this.weather = this.config.entity in hass.states
     ? hass.states[this.config.entity]
     : null;
 
   if (this.weather) {
-    const visibility_entity = this.config.visibility_entity ? this.config.visibility_entity : this.config.visibility;
+    if (this.config.temp) {
+      this.temperature = hass.states[this.config.temp].state;
+      this.temperature_unit = this.config.temp_unit ? this.config.temp_unit : this.weather.attributes.temperature_unit;
+    } else {
+      this.temperature = this.weather.attributes.temperature;
+      this.temperature_unit = this.weather.attributes.temperature_unit;
+    }
 
-    this.temperature = this.config.temp ? hass.states[this.config.temp].state : this.weather.attributes.temperature;
+    if (this.config.feels_like) {
+      this.feels_like = hass.states[this.config.feels_like].state;
+      this.feels_like_unit = this.config.feels_like_unit ? this.config.feels_like_unit : this.weather.attributes.temperature_unit;
+    } else {
+      this.feels_like = this.weather.attributes.apparent_temperature;
+      this.feels_like_unit = this.weather.attributes.temperature_unit;
+    }
+
+    if (this.config.dew_point) {
+      this.dew_point = hass.states[this.config.dew_point].state;
+      this.dew_point_unit = this.config.dew_point_unit ? this.config.dew_point_unit : this.weather.attributes.temperature_unit;
+    } else {
+      this.dew_point = this.weather.attributes.dew_point;
+      this.dew_point_unit = this.weather.attributes.temperature_unit;
+    }
+
+    if (this.config.press) {
+      this.pressure = hass.states[this.config.press].state;
+      this.pressure_unit = this.config.press_unit ? this.config.press_unit : this.weather.attributes.pressure_unit;
+    } else {
+      this.pressure = this.weather.attributes.pressure;
+      this.pressure_unit = this.weather.attributes.pressure_unit;
+    }
+
+    if (this.config.windspeed) {
+      this.windspeed = hass.states[this.config.windspeed].state;
+      this.windspeed_unit = this.config.windspeed_unit ? this.config.windspeed_unit : this.weather.attributes.wind_speed_unit;
+    } else {
+      this.windspeed = this.weather.attributes.wind_speed;
+      this.windspeed_unit = this.weather.attributes.wind_speed_unit;
+    }
+
+    if (this.config.wind_gust_speed) {
+      this.wind_gust_speed = hass.states[this.config.wind_gust_speed].state;
+      this.wind_gust_speed_unit = this.config.wind_gust_speed_unit ? this.config.wind_gust_speed_unit : this.weather.attributes.wind_speed_unit;
+    } else {
+      this.wind_gust_speed = this.weather.attributes.wind_gust_speed;
+      this.wind_gust_speed_unit = this.weather.attributes.wind_speed_unit;
+    }
+
+    if (this.config.visibility_entity) {
+      this.visibility = hass.states[this.config.visibility_entity].state;
+      this.visibility_unit = this.config.visibility_unit ? this.config.visibility_unit : this.weather.attributes.visibility_unit;
+    } else if (this.config.visibility && hass.states[this.config.visibility]) { // keep compatibility with old config
+      this.visibility = hass.states[this.config.visibility].state;
+      this.visibility_unit = this.config.visibility_unit ? this.config.visibility_unit : this.weather.attributes.visibility_unit;
+    } else {
+      this.visibility = this.weather.attributes.visibility;
+      this.visibility_unit = this.weather.attributes.visibility_unit;
+    }
+
     this.humidity = this.config.humid ? hass.states[this.config.humid].state : this.weather.attributes.humidity;
-    this.pressure = this.config.press ? hass.states[this.config.press].state : this.weather.attributes.pressure;
     this.uv_index = this.config.uv ? hass.states[this.config.uv].state : this.weather.attributes.uv_index;
-    this.windSpeed = this.config.windspeed ? hass.states[this.config.windspeed].state : this.weather.attributes.wind_speed;
-    this.dew_point = this.config.dew_point ? hass.states[this.config.dew_point].state : this.weather.attributes.dew_point;
-    this.wind_gust_speed = this.config.wind_gust_speed ? hass.states[this.config.wind_gust_speed].state : this.weather.attributes.wind_gust_speed;
-    this.visibility = (visibility_entity && hass.states[visibility_entity]) ? hass.states[visibility_entity].state : this.weather.attributes.visibility;
 
     if (this.config.winddir && hass.states[this.config.winddir] && hass.states[this.config.winddir].state !== undefined) {
       this.windDirection = parseFloat(hass.states[this.config.winddir].state);
@@ -17953,7 +18034,6 @@ set hass(hass) {
       this.windDirection = this.weather.attributes.wind_bearing;
     }
 
-    this.feels_like = this.config.feels_like && hass.states[this.config.feels_like] ? hass.states[this.config.feels_like].state : this.weather.attributes.apparent_temperature;
     this.description = this.config.description && hass.states[this.config.description] ? hass.states[this.config.description].state : this.weather.attributes.description;
   }
 
@@ -18063,10 +18143,6 @@ ll(str) {
     return 4;
   }
 
-  getUnit(unit) {
-    return this._hass.config.unit_system[unit] || '';
-  }
-
   getWeatherIcon(condition, sun) {
     if (this.config.animated_icons === true) {
       const iconName = sun === 'below_horizon' ? weatherIconsNight[condition] : weatherIconsDay[condition];
@@ -18134,39 +18210,64 @@ getWindDir(deg) {
   }
 }
 
-calculateBeaufortScale(windSpeed) {
-  const unitConversion = {
-    'km/h': 1,
-    'm/s': 3.6,
-    'mph': 1.60934,
+convertSpeed(speed, unitFrom, unitTo) {
+  if (unitFrom === unitTo) {
+    return speed;
+  }
+
+  // Multiply speed by conversion factor to convert to m/s.
+  // Divide speed by conversion factor to convert from m/s.
+  const convFactor = {
+    'm/s': 1,
+    'km/h': 0.277778,
+    'ft/s': 0.3048,
+    'mph': 0.44704,
+    'kn': 0.514444,
   };
 
-  if (!this.weather || !this.weather.attributes.wind_speed_unit) {
-    throw new Error('wind_speed_unit not available in weather attributes.');
+  // Special case: Beaufort scale
+  if (unitTo === 'Bft' || unitTo === 'Beaufort') {
+    // Convert to m/s.
+    speed = speed * convFactor[unitFrom];
+    // Convert m/s to Beaufort.
+    // Matches Home Assistant built-in Beaufort unit: https://github.com/home-assistant/core/pull/105795
+    return Math.pow(speed / 0.836, 2 / 3);
+  }
+  if (unitFrom === 'Bft' || unitFrom === 'Beaufort') {
+    // Convert to m/s.
+    // Matches Home Assistant built-in Beaufort unit: https://github.com/home-assistant/core/pull/105795
+    speed = 0.836 * Math.pow(speed, 3 / 2);
+    // Convert from m/s to desired unit.
+    return speed / convFactor[unitTo];
   }
 
-  const wind_speed_unit = this.weather.attributes.wind_speed_unit;
-  const conversionFactor = unitConversion[wind_speed_unit];
+  // Convert to m/s and back to get speed in desired unit.
+  return speed * convFactor[unitFrom] / convFactor[unitTo];
+}
 
-  if (typeof conversionFactor !== 'number') {
-    throw new Error(`Unknown wind_speed_unit: ${wind_speed_unit}`);
+convertPressure(pressure, unitFrom, unitTo) {
+  if (unitFrom === unitTo) {
+    return pressure;
   }
 
-  const windSpeedInKmPerHour = windSpeed * conversionFactor;
+  // Multiply pressure by conversion factor to convert to hPa.
+  // Divide pressure by conversion factor to convert from hPa.
+  // (Not sure all of these really make sense to use, but they're all valid for
+  // atmospheric pressure in different areas)
+  const convFactor = {
+    'hPa': 1,
+    'kPa': 10,
+    'Pa': 0.01,
+    'mPa': 0.00001,
+    'bar': 1000,
+    'cbar': 10,
+    'mbar': 1,
+    'mmHg': 1.33322,
+    'inHg': 33.8639,
+  };
 
-  if (windSpeedInKmPerHour < 1) return 0;
-  else if (windSpeedInKmPerHour < 6) return 1;
-  else if (windSpeedInKmPerHour < 12) return 2;
-  else if (windSpeedInKmPerHour < 20) return 3;
-  else if (windSpeedInKmPerHour < 29) return 4;
-  else if (windSpeedInKmPerHour < 39) return 5;
-  else if (windSpeedInKmPerHour < 50) return 6;
-  else if (windSpeedInKmPerHour < 62) return 7;
-  else if (windSpeedInKmPerHour < 75) return 8;
-  else if (windSpeedInKmPerHour < 89) return 9;
-  else if (windSpeedInKmPerHour < 103) return 10;
-  else if (windSpeedInKmPerHour < 118) return 11;
-  else return 12;
+  // Convert to hPa and back to get pressure in desired unit.
+  return pressure * convFactor[unitFrom] / convFactor[unitTo];
 }
 
 async firstUpdated(changedProperties) {
@@ -18279,7 +18380,7 @@ cancelAutoscroll() {
 * Completely recreates the main chart (not anything else).
 */
 drawChart({ config, language, weather, forecastItems } = this) {
-  if (!this.forecasts || !this.forecasts.length) {
+  if (!this.forecasts || !this.forecasts.length || !weather) {
     return [];
   }
 
@@ -18300,12 +18401,15 @@ drawChart({ config, language, weather, forecastItems } = this) {
   if (this.forecastChart) {
     this.forecastChart.destroy();
   }
-  var tempUnit = this._hass.config.unit_system.temperature;
-  var lengthUnit = this._hass.config.unit_system.length;
-  if (config.forecast.precipitation_type === 'probability') {
+
+  // Note: use weather attributes because forecast is always from weather, not
+  // a custom sensor entity.
+  var tempUnit = weather.attributes.temperature_unit;
+  if (config.forecast.precipitation_type !== 'rainfall') {
     var precipUnit = '%';
   } else {
-    var precipUnit = lengthUnit === 'km' ? this.ll('units')['mm'] : this.ll('units')['in'];
+    var precipUnitUnlocal = weather.attributes.precipitation_unit;
+    var precipUnit = this.ll('units')[precipUnitUnlocal];
   }
   const data = this.computeForecastData();
 
@@ -18323,13 +18427,13 @@ drawChart({ config, language, weather, forecastItems } = this) {
 
   let precipMax;
 
-  if (config.forecast.precipitation_type === 'probability') {
+  if (config.forecast.precipitation_type !== 'rainfall') {
     precipMax = 100;
   } else {
     if (config.forecast.type === 'hourly') {
-      precipMax = lengthUnit === 'km' ? 4 : 1;
+      precipMax = precipUnitUnlocal === 'mm' ? 4 : precipUnitUnlocal === 'cm' ? 0.4 : 0.2;
     } else {
-      precipMax = lengthUnit === 'km' ? 20 : 1;
+      precipMax = precipUnitUnlocal === 'mm' ? 20 : precipUnitUnlocal === 'cm' ? 2 : 1;
     }
   }
 
@@ -18372,15 +18476,13 @@ drawChart({ config, language, weather, forecastItems } = this) {
           return context.dataset.data[context.dataIndex] > 0 ? 'true' : false;
         },
       formatter: function (value, context) {
-        const precipitationType = config.forecast.precipitation_type;
-
         const rainfall = context.dataset.data[context.dataIndex];
         const probability = data.forecast[context.dataIndex].precipitation_probability;
 
         let formattedValue;
-        if (precipitationType === 'rainfall') {
+        if (config.forecast.precipitation_type === 'rainfall') {
           if (probability !== undefined && probability !== null && config.forecast.show_probability) {
-	    formattedValue = `${rainfall > 9 ? Math.round(rainfall) : rainfall.toFixed(1)} ${precipUnit}\n${Math.round(probability)}%`;
+            formattedValue = `${rainfall > 9 ? Math.round(rainfall) : rainfall.toFixed(1)} ${precipUnit}\n${Math.round(probability)}%`;
           } else {
             formattedValue = `${rainfall > 9 ? Math.round(rainfall) : rainfall.toFixed(1)} ${precipUnit}`;
           }
@@ -18815,7 +18917,7 @@ updateChart({ forecasts, forecastChart } = this) {
     `;
   }
 
-renderMain({ config, sun, weather, temperature, feels_like, description } = this) {
+renderMain({ config, sun, weather, temperature, temperature_unit, feels_like, feels_like_unit, description } = this) {
   if (config.show_main === false)
     return x``;
 
@@ -18887,11 +18989,11 @@ renderMain({ config, sun, weather, temperature, feels_like, description } = this
       ${iconHtml}
       <div>
         <div>
-          ${showTemperature ? x`${roundedTemperature}<span>${this.getUnit('temperature')}</span>` : ''}
+          ${showTemperature ? x`${roundedTemperature}<span>${temperature_unit}</span>` : ''}
           ${showFeelsLike && roundedFeelsLike ? x`
             <div class="feels-like">
               ${this.ll('feelsLike')}
-              ${roundedFeelsLike}${this.getUnit('temperature')}
+              ${roundedFeelsLike}${feels_like_unit}
             </div>
           ` : ''}
           ${showCurrentCondition ? x`
@@ -18918,63 +19020,9 @@ renderMain({ config, sun, weather, temperature, feels_like, description } = this
   `;
 }
 
-renderAttributes({ config, humidity, pressure, windSpeed, windDirection, sun, language, uv_index, dew_point, wind_gust_speed, visibility } = this) {
-  let dWindSpeed = windSpeed;
-  let dPressure = pressure;
-
-  if (this.unitSpeed !== this.weather.attributes.wind_speed_unit) {
-    if (this.unitSpeed === 'm/s') {
-      if (this.weather.attributes.wind_speed_unit === 'km/h') {
-        dWindSpeed = Math.round(windSpeed * 1000 / 3600);
-      } else if (this.weather.attributes.wind_speed_unit === 'mph') {
-        dWindSpeed = Math.round(windSpeed * 0.44704);
-      }
-    } else if (this.unitSpeed === 'km/h') {
-      if (this.weather.attributes.wind_speed_unit === 'm/s') {
-        dWindSpeed = Math.round(windSpeed * 3.6);
-      } else if (this.weather.attributes.wind_speed_unit === 'mph') {
-        dWindSpeed = Math.round(windSpeed * 1.60934);
-      }
-    } else if (this.unitSpeed === 'mph') {
-      if (this.weather.attributes.wind_speed_unit === 'm/s') {
-        dWindSpeed = Math.round(windSpeed / 0.44704);
-      } else if (this.weather.attributes.wind_speed_unit === 'km/h') {
-        dWindSpeed = Math.round(windSpeed / 1.60934);
-      }
-    } else if (this.unitSpeed === 'Bft') {
-      dWindSpeed = this.calculateBeaufortScale(windSpeed);
-    }
-  } else {
-    dWindSpeed = Math.round(dWindSpeed);
-  }
-
-  if (this.unitPressure !== this.weather.attributes.pressure_unit) {
-    if (this.unitPressure === 'mmHg') {
-      if (this.weather.attributes.pressure_unit === 'hPa') {
-        dPressure = Math.round(pressure * 0.75006);
-      } else if (this.weather.attributes.pressure_unit === 'inHg') {
-        dPressure = Math.round(pressure * 25.4);
-      }
-    } else if (this.unitPressure === 'hPa') {
-      if (this.weather.attributes.pressure_unit === 'mmHg') {
-        dPressure = Math.round(pressure / 0.75006);
-      } else if (this.weather.attributes.pressure_unit === 'inHg') {
-        dPressure = Math.round(pressure * 33.8639);
-      }
-    } else if (this.unitPressure === 'inHg') {
-      if (this.weather.attributes.pressure_unit === 'mmHg') {
-        dPressure = pressure / 25.4;
-      } else if (this.weather.attributes.pressure_unit === 'hPa') {
-        dPressure = pressure / 33.8639;
-      }
-      dPressure = dPressure.toFixed(2);
-    }
-  } else {
-    if (this.unitPressure === 'hPa' || this.unitPressure === 'mmHg') {
-      dPressure = Math.round(dPressure);
-    }
-  }
-
+renderAttributes({ config, humidity, pressure, pressure_unit, windspeed, windspeed_unit, windDirection,
+  sun, language, uv_index, dew_point, wind_gust_speed, wind_gust_speed_unit, visibility } = this
+) {
   if (config.show_attributes == false)
     return x``;
 
@@ -18987,6 +19035,33 @@ renderAttributes({ config, humidity, pressure, windSpeed, windDirection, sun, la
   const showWindgustspeed = config.show_wind_gust_speed == true;
   const showVisibility = config.show_visibility == true;
 
+  let dWindSpeed = windspeed;
+  let dWindGustSpeed = wind_gust_speed;
+  let dPressure = pressure;
+
+  if (showWindSpeed && dWindSpeed !== undefined) {
+    dWindSpeed = this.convertSpeed(dWindSpeed, windspeed_unit, this.unitSpeed);
+    dWindSpeed = Math.round(dWindSpeed);
+  }
+
+  if (showWindgustspeed && dWindGustSpeed !== undefined) {
+    dWindGustSpeed = this.convertSpeed(dWindGustSpeed, wind_gust_speed_unit, this.unitSpeed);
+    dWindGustSpeed = Math.round(dWindGustSpeed);
+  }
+
+  if (showPressure && dPressure !== undefined) {
+    dPressure = this.convertPressure(dPressure, pressure_unit, this.unitPressure);
+    if (this.unitPressure === 'cbar' || this.unitPressure === 'kPa') {
+      dPressure = dPressure.toFixed(1);
+    } else if (this.unitPressure === 'inHg') {
+      dPressure = dPressure.toFixed(2);
+    } else if (this.unitPressure === 'bar') {
+      dPressure = dPressure.toFixed(3);
+    } else {
+      dPressure = Math.round(dPressure);
+    }
+  }
+
 return x`
     <div class="attributes">
       ${((showHumidity && humidity !== undefined) || (showPressure && dPressure !== undefined) || (showDewpoint && dew_point !== undefined) || (showVisibility && visibility !== undefined)) ? x`
@@ -18998,10 +19073,10 @@ return x`
             <ha-icon icon="hass:gauge"></ha-icon> ${dPressure} ${this.ll('units')[this.unitPressure]} <br>
           ` : ''}
           ${showDewpoint && dew_point !== undefined ? x`
-            <ha-icon icon="hass:thermometer-water"></ha-icon> ${dew_point} ${this.weather.attributes.temperature_unit} <br>
+            <ha-icon icon="hass:thermometer-water"></ha-icon> ${dew_point} ${this.dew_point_unit} <br>
           ` : ''}
           ${showVisibility && visibility !== undefined ? x`
-            <ha-icon icon="hass:eye"></ha-icon> ${visibility} ${this.weather.attributes.visibility_unit}
+            <ha-icon icon="hass:eye"></ha-icon> ${visibility} ${this.visibility_unit}
           ` : ''}
         </div>
       ` : ''}
@@ -19019,7 +19094,7 @@ return x`
           ` : ''}
         </div>
       ` : ''}
-      ${((showWindDirection && windDirection !== undefined) || (showWindSpeed && dWindSpeed !== undefined)) ? x`
+      ${((showWindDirection && windDirection !== undefined) || (showWindSpeed && dWindSpeed !== undefined) || (showWindgustspeed && dWindGustSpeed !== undefined)) ? x`
         <div>
           ${showWindDirection && windDirection !== undefined ? x`
             <ha-icon icon="hass:${this.getWindDirIcon(windDirection)}"></ha-icon> ${this.getWindDir(windDirection)} <br>
@@ -19028,9 +19103,9 @@ return x`
             <ha-icon icon="hass:weather-windy"></ha-icon>
             ${dWindSpeed} ${this.ll('units')[this.unitSpeed]} <br>
           ` : ''}
-          ${showWindgustspeed && wind_gust_speed !== undefined ? x`
+          ${showWindgustspeed && dWindGustSpeed !== undefined ? x`
             <ha-icon icon="hass:weather-windy-variant"></ha-icon>
-            ${wind_gust_speed} ${this.ll('units')[this.unitSpeed]}
+            ${dWindGustSpeed} ${this.ll('units')[this.unitSpeed]}
           ` : ''}
         </div>
       ` : ''}
@@ -19120,12 +19195,16 @@ renderForecastConditionIcons({ config, forecastItems, sun } = this) {
   `;
 }
 
-renderWind({ config, weather, windSpeed, windDirection, forecastItems } = this) {
+renderWind({ config, weather, windDirection, forecastItems } = this) {
   const showWindForecast = config.forecast.show_wind_forecast !== false;
 
   if (!showWindForecast) {
     return x``;
   }
+
+  // Note: use weather attributes because forecast is always from weather, not
+  // a custom sensor entity.
+  const wind_speed_unit = weather.attributes.wind_speed_unit;
 
   const forecast = this.forecasts ? this.forecasts.slice(0, forecastItems) : [];
   const totalMinWidth = forecast.length * this.columnMinWidth;
@@ -19135,33 +19214,8 @@ renderWind({ config, weather, windSpeed, windDirection, forecastItems } = this) 
     <div class="wind-details" style="min-width: ${totalMinWidth - 10 + 'px'}">
       ${showWindForecast ? x`
         ${forecast.map((item) => {
-          let dWindSpeed = item.wind_speed;
-
-          if (this.unitSpeed !== this.weather.attributes.wind_speed_unit) {
-            if (this.unitSpeed === 'm/s') {
-              if (this.weather.attributes.wind_speed_unit === 'km/h') {
-                dWindSpeed = Math.round(item.wind_speed * 1000 / 3600);
-              } else if (this.weather.attributes.wind_speed_unit === 'mph') {
-                dWindSpeed = Math.round(item.wind_speed * 0.44704);
-              }
-            } else if (this.unitSpeed === 'km/h') {
-              if (this.weather.attributes.wind_speed_unit === 'm/s') {
-                dWindSpeed = Math.round(item.wind_speed * 3.6);
-              } else if (this.weather.attributes.wind_speed_unit === 'mph') {
-                dWindSpeed = Math.round(item.wind_speed * 1.60934);
-              }
-            } else if (this.unitSpeed === 'mph') {
-              if (this.weather.attributes.wind_speed_unit === 'm/s') {
-                dWindSpeed = Math.round(item.wind_speed / 0.44704);
-              } else if (this.weather.attributes.wind_speed_unit === 'km/h') {
-                dWindSpeed = Math.round(item.wind_speed / 1.60934);
-              }
-            } else if (this.unitSpeed === 'Bft') {
-              dWindSpeed = this.calculateBeaufortScale(item.wind_speed);
-            }
-          } else {
-            dWindSpeed = Math.round(dWindSpeed);
-          }
+          let dWindSpeed = this.convertSpeed(item.wind_speed, wind_speed_unit, this.unitSpeed);
+          dWindSpeed = Math.round(dWindSpeed);
 
           return x`
             <div class="wind-detail">

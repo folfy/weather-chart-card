@@ -2,16 +2,23 @@ import { LitElement, html } from 'lit';
 
 const ALT_SCHEMA = [
   { name: "temp", title: "Alternative temperature sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "temp_unit", title: "Temperature sensor unit", selector: { select: { options: [ '', '°C', '°F' ], mode: 'dropdown' } } },
   { name: "feels_like", title: "Alternative feels like temperature sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "feels_like_unit", title: "Feels like sensor unit", selector: { select: { options: [ '', '°C', '°F' ], mode: 'dropdown' } } },
   { name: "description", title: "Alternative weather description sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "press", title: "Alternative pressure sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "press_unit", title: "Pressure sensor unit", selector: { select: { options: [ '', 'hPa', 'kPa', 'mbar', 'bar', 'mmHg', 'inHg' ], mode: 'dropdown' } } },
   { name: "humid", title: "Alternative humidity sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "uv", title: "Alternative UV index sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "winddir", title: "Alternative wind bearing sensor", selector: { entity: { domain: 'sensor' } } },
   { name: "windspeed", title: "Alternative wind speed sensor", selector: { entity: { domain: 'sensor' } } },
-  { name: "dew_point", title: "Alternative dew pointsensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "windspeed_unit", title: "Wind speed sensor unit", selector: { select: { options: [ '', 'm/s', 'km/h', 'ft/s', 'mph', 'kn' ], mode: 'dropdown' } } },
+  { name: "dew_point", title: "Alternative dew point sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "dew_point_unit", title: "Dew point sensor unit", selector: { select: { options: [ '', '°C', '°F' ], mode: 'dropdown' } } },
   { name: "wind_gust_speed", title: "Alternative wind gust speed sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "wind_gust_speed_unit", title: "Wind gust speed sensor unit", selector: { select: { options: [ '', 'm/s', 'km/h', 'ft/s', 'mph', 'kn' ], mode: 'dropdown' } } },
   { name: "visibility_entity", title: "Alternative visibility sensor", selector: { entity: { domain: 'sensor' } } },
+  { name: "visibility_unit", title: "Visibility sensor unit", selector: { select: { options: [ '', 'm', 'km', 'mi' ], mode: 'dropdown' } } },
 ];
 
 class WeatherChartCardEditor extends LitElement {
