@@ -1,9 +1,14 @@
 <h1 align="center">Weather Chart Card</h1>
 
+
 ## Original + Ability to hide UV
 The original is no longer maintained, thats why I try to modify it myself. No guarantees, repository is in Beta-State since this is my first try of forking something.
 
 The only change for now is that I added the ability to hide the UV-index, because it annoyed me. I don't know much about programming, I simply implemented the commit of headsoft_mikhail and it works for now.
+
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mlamberts7I)
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=HZUUW64FRM2J2)
+
 
 Credits to headsoft_mikhail and of course to mlamberts78! (You're welcome to tell me how to hyperlink the names)
 
