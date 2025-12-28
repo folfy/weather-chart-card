@@ -707,6 +707,10 @@ class WeatherChartCardEditor extends LitElement {
             ></ha-switch>
             <label class="switch-label">
               Show Dew Point Forecast
+            </label>
+          </div>
+          <div class="switch-container">
+            <ha-switch
               @change="${(e) => this._valueChanged(e, 'forecast.show_wind_unit')}"
               .checked="${forecastConfig.show_wind_unit !== false}"
             ></ha-switch>
