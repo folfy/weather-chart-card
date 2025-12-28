@@ -1343,6 +1343,15 @@ class WeatherChartCardEditor extends s {
           </div>
           <div class="switch-container">
             <ha-switch
+              @change="${(e) => this._valueChanged(e, 'show_uv')}"
+              .checked="${this._config.show_uv !== false}"
+            ></ha-switch>
+            <label class="switch-label">
+              Show UV
+            </label>
+          </div>
+          <div class="switch-container">
+            <ha-switch
               @change="${(e) => this._valueChanged(e, 'show_wind_direction')}"
               .checked="${this._config.show_wind_direction !== false}"
             ></ha-switch>
@@ -17885,6 +17894,7 @@ static getStubConfig(hass, unusedEntities, allEntities) {
     show_wind_direction: true,
     show_wind_speed: true,
     show_sun: true,
+    show_uv: true,
     show_feels_like: false,
     show_dew_point: false,
     show_wind_gust_speed: false,
@@ -19131,6 +19141,7 @@ renderAttributes({ config, humidity, pressure, pressure_unit, windspeed, windspe
   const showWindDirection = config.show_wind_direction !== false;
   const showWindSpeed = config.show_wind_speed !== false;
   const showSun = config.show_sun !== false;
+  const showUv = config.show_uv !== false;
   const showDewpoint = config.show_dew_point == true;
   const showWindgustspeed = config.show_wind_gust_speed == true;
   const showVisibility = config.show_visibility == true;
@@ -19180,9 +19191,9 @@ return x`
           ` : ''}
         </div>
       ` : ''}
-      ${((showSun && sun !== undefined) || (typeof uv_index !== 'undefined' && uv_index !== undefined)) ? x`
+      ${((showSun && sun !== undefined) || (showUv && typeof uv_index !== 'undefined' && uv_index !== undefined)) ? x`
         <div>
-          ${typeof uv_index !== 'undefined' && uv_index !== undefined ? x`
+          ${showUv && typeof uv_index !== 'undefined' && uv_index !== undefined ? x`
             <div>
               <ha-icon icon="hass:white-balance-sunny"></ha-icon> UV: ${Math.round(uv_index * 10) / 10}
             </div>

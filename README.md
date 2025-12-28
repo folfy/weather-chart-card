@@ -1,23 +1,27 @@
 <h1 align="center">Weather Chart Card</h1>
 
+
+## Original + Ability to hide UV
+The original is no longer maintained, thats why I try to modify it myself. No guarantees, repository is in Beta-State since this is my first try of forking something.
+
+The only change for now is that I added the ability to hide the UV-index, because it annoyed me. I don't know much about programming, I simply implemented the commit of headsoft_mikhail and it works for now.
+
 [![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mlamberts7I)
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=HZUUW64FRM2J2)
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/mlamberts78/weather-chart-card?style=flat-square)](https://github.com/mlamberts78/weather-chart-card/releases/latest)
-![GitHub downloads](https://img.shields.io/github/downloads/mlamberts78/weather-chart-card/total?style=flat-square)
-![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads/mlamberts78/weather-chart-card/latest/total)
-[![HACS Validate](https://github.com/mlamberts78/weather-chart-card/actions/workflows/validate.yaml/badge.svg)](https://github.com/mlamberts78/weather-chart-card/actions/workflows/validate.yaml)
 
-![weather-chart-card](https://github.com/mlamberts78/weather-chart-card/assets/93537082/bd5b9f6e-4125-4a19-9773-463e6d054bce)
-![15-days](https://github.com/mlamberts78/weather-chart-card/assets/93537082/f4de6060-7005-4a6d-b1f3-3aa17c856c73)
+Credits to headsoft_mikhail and of course to mlamberts78! (You're welcome to tell me how to hyperlink the names)
+
+![card with and without uv](https://github.com/Maetzi87/weather-chart-card/blob/master/examples/weather-chart-card%20with%20and%20without%20uv.PNG)
+
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/maetzi87/weather-chart-card?style=flat-square)](https://github.com/maetzi/weather-chart-card/releases/latest)
 
 ## Installation
 
 ### HACS
 
-This card is available in HACS (Home Assistant Community Store).
-HACS is a third party community store and is not included in Home Assistant out of the box.
+You need to add this repository as custom repository in HACS in order to add the Card. (Type = Dashboard)
 
 #### Configuration variables:
 
@@ -50,7 +54,8 @@ HACS is a third party community store and is not included in Home Assistant out 
 | show_temperature      | boolean | true                     | Show or hide the current temperature.                                                              |
 | show_current_condition| boolean | true                     | Show or hide the current weather condition.                                                        |
 | show_attributes       | boolean | true                     | Show or hide a section with attributes such as pressure, humidity, wind direction and speed, etc.  |
-| show_sun              | boolean | true                     | Show or hide the sunset information                                                                |
+| show_sun | boolean | true | Show or hide the sunset information  |
+| show_uv | boolean | true | Show or hide the uv index information |
 | show_time             | boolean | false                    | Show or hide the current time on the card.                                                         |
 | show_time_seconds     | boolean | false                    | Show or hide seconds for the current time on the card.                                             |
 | show_day              | boolean | false                    | Show or hide the current day on the card. (Only visible when show_time is true.)                   |
@@ -75,7 +80,7 @@ HACS is a third party community store and is not included in Home Assistant out 
 | day_date_size         | number  | 15                       | The size of the current day and date in pixels.                                                    |
 | forecast              | object  | none                     | See [forecast options](#forecast-options) for available options.                                   |
 | units                 | object  | none                     | See [units of measurement](#units-of-measurement) for available options.                           |
-| locale                | string  | none                     | See [Supported languages](#Supported-languages) for available languages                            |
+| locale                | string  | none                     | See [Original Readme](https://github.com/mlamberts78/weather-chart-card#Supported-languages) for available languages                            |
 | autoscroll            | boolean | false                    | Update the chart each hour, hiding prior forecast datapoints                                       |
 
 ##### Forecast options
@@ -154,29 +159,36 @@ units:
   speed: m/s
 ```
 
-###### Supported languages:
-| Language         | Locale  |
-| ---------------- | ------- |
-| Bulgarian        | bg      |
-| Catalan          | ca      |
-| Czech            | cs      |
-| Danish           | da      |
-| Dutch            | nl      |
-| English          | en      |
-| Finnish          | fi      |
-| French           | fr      |
-| German           | de      |
-| Greek            | el      |
-| Hungarian        | hu      |
-| Italian          | it      |
-| Lithuanian       | lt      |
-| Norwegian        | no      |
-| Polish           | pl      |
-| Portuguese       | pt      |
-| Romanian         | ro      |
-| Russian          | ru      |
-| Slovak           | sk      |
-| Spanish          | es      |
-| Swedish          | sv      |
-| Ukrainian        | uk      |
-| 한국어           | ko      |
+###### Personal example using card-mod and animated background
+![card_mod](https://github.com/Maetzi87/weather-chart-card/blob/master/examples/personal_version.PNG)
+```yaml
+type: custom:weather-chart-card
+entity: weather.my_home
+show_main: false
+forecast:
+  precipitation_type: ""
+  type: hourly
+  style: style2
+  show_wind_forecast: false
+  chart_height: "150"
+  number_of_forecasts: "8"
+units:
+  pressure: ""
+  speed: km/h
+locale: de
+icon_style: style1
+show_temperature: false
+show_current_condition: false
+show_uv: false
+card_mod:
+  style: |
+    ha-card {
+      --ha-card-background: rgba(255,255,255,0.8);
+      --ha-card-border-width: 0px;
+      border-radius: 10px;
+      --primary-text-color: #4863A0;
+    }
+```
+
+###### Languages:
+For supported languages see original Readme: https://github.com/mlamberts78/weather-chart-card
