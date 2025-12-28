@@ -12,6 +12,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -46,6 +47,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -80,6 +82,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -114,6 +117,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -149,6 +153,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -183,6 +188,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -217,6 +223,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -251,6 +258,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -285,6 +293,7 @@ const locale = {
       'hPa': 'гПа',
       'mmHg': 'мм рт.ст.',
       'mm': 'мм',
+      'cm': 'см',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -319,6 +328,7 @@ const locale = {
         'hPa': 'hPa',
         'mmHg': 'mm Hg',
         'mm': 'mm',
+        'cm': 'cm',
         'in': 'in'
     },
     'cardinalDirections': [
@@ -353,6 +363,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'po'
     },
     'cardinalDirections': [
@@ -387,6 +398,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -421,6 +433,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -455,6 +468,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -489,6 +503,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -523,6 +538,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -557,6 +573,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'χιλ. υδράργυρου',
       'mm': 'χιλ.',
+      'cm': 'εκ.',
       'in': 'ίντσες'
     },
     'cardinalDirections': [
@@ -591,6 +608,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mmHg',
       'mm': 'мм',
+      'cm': 'см',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -625,6 +643,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -659,6 +678,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -693,6 +713,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -727,6 +748,7 @@ const locale = {
       'hPa': 'гПа',
       'mmHg': 'мм рт. ст.',
       'mm': 'мм',
+      'cm': 'см',
       'in': 'in'
     },
     'cardinalDirections': [
@@ -761,6 +783,7 @@ const locale = {
       'hPa': 'hPa',
       'mmHg': 'mm Hg',
       'mm': 'mm',
+      'cm': 'cm',
       'in': 'in'
     },
     'cardinalDirections': [
