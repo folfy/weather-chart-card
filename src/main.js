@@ -59,6 +59,7 @@ static getStubConfig(hass, unusedEntities, allEntities) {
       show_wind_forecast: true,
       condition_icons: true,
       round_temp: false,
+      show_dew_point_forecast: false,
       type: 'daily',
       number_of_forecasts: '0',
       disable_animation: false,
@@ -120,9 +121,11 @@ setConfig(config) {
       temperature1_color: 'rgba(255, 152, 0, 1.0)',
       temperature2_color: 'rgba(68, 115, 158, 1.0)',
       precipitation_color: 'rgba(132, 209, 253, 1.0)',
+      dewpoint_color: 'blue',
       condition_icons: true,
       show_wind_forecast: true,
       round_temp: false,
+      show_dew_point_forecast: false,
       type: 'daily',
       number_of_forecasts: '0',
       '12hourformat': false,
@@ -760,6 +763,15 @@ drawChart({ config, language, weather, forecastItems } = this) {
         offset: -10,
       },
     },
+    {
+      label: this.ll('dewpoint'),
+      type: 'line',
+      data: data.dewPoint,
+      yAxisID: 'DPAxis',
+      borderColor: config.forecast.dewpoint_color,
+      backgroundColor: config.forecast.dewpoint_color,
+      pointRadius: 1,
+    },
   ];
 
   const chart_text_color = (config.forecast.chart_text_color === 'auto') ? textColor : config.forecast.chart_text_color;
@@ -795,6 +807,24 @@ drawChart({ config, language, weather, forecastItems } = this) {
       backgroundColor: 'transparent',
       borderColor: 'transparent',
       color: chart_text_color || config.forecast.temperature2_color,
+      font: {
+        size: parseInt(config.forecast.labels_font_size) + 1,
+        lineHeight: 0.7,
+      },
+    };
+
+    datasets[3].datalabels = {
+      display: function (context) {
+        return 'auto';
+      },
+      formatter: function (value, context) {
+        return context.dataset.data[context.dataIndex] + '°';
+      },
+      align: 'bottom',
+      anchor: 'center',
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      color: config.forecast.chart_text_color,
       font: {
         size: parseInt(config.forecast.labels_font_size) + 1,
         lineHeight: 0.7,
@@ -886,6 +916,19 @@ drawChart({ config, language, weather, forecastItems } = this) {
             display: false,
           },
         },
+        DPAxis: {
+          position: 'left',
+          beginAtZero: false,
+          suggestedMin: Math.min(...data.tempHigh, ...data.tempLow, ...data.dewPoint) - 5,
+          suggestedMax: Math.max(...data.tempHigh, ...data.tempLow, ...data.dewPoint) + 3,
+          grid: {
+            display: false,
+            drawTicks: false,
+          },
+          ticks: {
+            display: false,
+          },
+        },
       },
       plugins: {
         legend: {
@@ -945,10 +988,12 @@ drawChart({ config, language, weather, forecastItems } = this) {
 computeForecastData({ config, forecastItems } = this) {
   var forecast = this.forecasts ? this.forecasts.slice(0, forecastItems) : [];
   var roundTemp = config.forecast.round_temp == true;
+  var showDewpointForecast = config.forecast.show_dew_point_forecast == true;
   var dateTime = [];
   var tempHigh = [];
   var tempLow = [];
   var precip = [];
+  var dewPoint = [];
 
   for (var i = 0; i < forecast.length; i++) {
     var d = forecast[i];
@@ -969,6 +1014,9 @@ computeForecastData({ config, forecastItems } = this) {
     } else {
       precip.push(d.precipitation);
     }
+    if (showDewpointForecast && typeof d.dew_point !== 'undefined') {
+      dewPoint.push(d.dew_point);
+    }
   }
 
   return {
@@ -977,6 +1025,7 @@ computeForecastData({ config, forecastItems } = this) {
     tempHigh,
     tempLow,
     precip,
+	  dewPoint,
   }
 }
 
@@ -995,6 +1044,7 @@ updateChart({ forecasts, forecastChart } = this) {
     forecastChart.data.datasets[0].data = data.tempHigh;
     forecastChart.data.datasets[1].data = data.tempLow;
     forecastChart.data.datasets[2].data = data.precip;
+    forecastChart.data.datasets[3].data = data.dewPoint;
     forecastChart.update();
   }
 }
