@@ -17998,6 +17998,10 @@ subscribeForecastEvents() {
     if (this.forecastSubscriber) {
       this.forecastSubscriber.then((unsub) => unsub());
     }
+    if (this._clockIntervalId) {
+      clearInterval(this._clockIntervalId);
+      this._clockIntervalId = null;
+    }
   }
 
   attachResizeObserver() {
@@ -18817,7 +18821,11 @@ renderMain({ config, sun, weather, temperature, feels_like, description } = this
   updateClock();
 
   if (showTime) {
-    setInterval(updateClock, 1000);
+    clearInterval(this._clockIntervalId);
+    this._clockIntervalId = setInterval(updateClock, showSeconds ? 1000 : 60000);
+  } else if (this._clockIntervalId) {
+    clearInterval(this._clockIntervalId);
+    this._clockIntervalId = null;
   }
 
   return x`
